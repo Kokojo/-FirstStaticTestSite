@@ -15,7 +15,7 @@ theme = "hugo-minimalist-theme"
     location = "Earth"
     # Link custom assets relative to /static
     avatar = "img/profile-image.png"
-    header_background = "img/mountains.jpg"
+    header_background = "img/desk.jpg"
     header_title = "Practice Dev"
     copyright = "Powered by [Hugo](http://gohugo.io)."
     custom_css = []
