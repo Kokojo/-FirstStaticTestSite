@@ -1,4 +1,4 @@
-baseurl = "https://example.org/"
+baseurl = "https://www.kojotest.tech/"
 languageCode = "en-us"
 title = "Practice Dev Site"
 # Define how many pages appear per site
