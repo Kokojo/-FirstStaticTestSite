@@ -1,38 +1,70 @@
-baseurl = "https://www.kojotest.tech/"
+baseurl = "https://example.org/"
+title = "WELCOME"
+theme = "hugo-nederburg-theme"
 languageCode = "en-us"
-title = "Practice Dev Site"
-# Define how many pages appear per site
-paginate = 10
-# Enable comments powered by Disqus by entering your disqus shortname
-#disqusShortname = "spf13"
-# Enable gogle analytics by entering your tracking code
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
-theme = "hugo-minimalist-theme"
+preserveTaxonomyNames = true
+paginate = 5 #frontpage pagination
 
 [params]
-    site_author = "John Doe"
-    site_description = "The awesome blog of John Doe."
-    location = "Earth"
-    # Link custom assets relative to /static
-    avatar = "img/profile-image.png"
-    header_background = "img/desk.jpg"
-    header_title = "Practice Dev"
-    copyright = "Powered by [Hugo](http://gohugo.io)."
-    custom_css = []
-    custom_js  = []
+  # slogan = "A fast &amp; secure theme"
+  description = "Test Site" # meta description
+  author = "Fred Mottey"
+  #authorLink = "https://appernetic.io/"
+  bio = [
+    "Fred Mottey - Test Automation Engineer"
+  ]
+  #copyright = [
+#    "&copy; 2018 Göran Svensson",
+ #   "Nederburg Hugo Theme by [Appernetic](https://appernetic.io).",
+ #   "A port of Tracks by Compete Themes."
+ # ]
 
-    # Enable gogle analytics by entering your tracking code
-    google_analytics = ""
 
-[social]
-    # Add your social network accounts to the profile section on the left
-    # by entering your username. The links to your account will be
-    # create automatically.
-    twitter   = "spf13"
-    facebook  = ""
-    linkedin  = ""
-    behance   = ""
-    dribbble  = ""
-    instagram = ""
-    github    = "digitalcraftsman"
-    gplus     = ""
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below (it is also used in Gravatar for the bio).
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
+ # email = "fred.mottey.work@gmail.com"
+
+  # Nav links in the side bar
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Get in touch"
+  url = "contact/"
+  weight = 3
+
+    [[menu.main]]
+  name = "me"
+  url = "me/"
+  weight = 4
+
+  [params.social]
+  #facebook      = "full profile url in facebook"
+  #googleplus    = "full profile url in googleplus"
+  #email         = "email@example.com"
+  #twitter       = "full profile url in twitter"
+  linkedin      = "full profile url in linkedin"
+  stackoverflow = "full profile url in stackoverflow"
+  #instagram     = "full profile url in instagram"
+  github        = "https://github.com/Kokojo"
